@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+          /* header content */
+form .b1:hover{
+    background-color: rgba(255, 255, 255, 0.658);
+    border-color: black;
+    color: black;
+}
+.vid{
+    width: 100vw;
+}
+.pic{
+    width: 150px;
+}
+.cf.b{
+    color: black;
+    background-color: black;
+}
+.icon1{
+    position: relative;
+    font-size: 35px;
+    right: 10px;
+    top: 4px;
+    cursor: pointer;
+}
+.icon2{
+    position: absolute;
+    font-size: 20px;
+    right: 30px;
+    top: 29px;
+    cursor: pointer;
+}
+.box{
+    position: relative;
+}
+          /* header content end */
+          
+          /* Body content */
+body{
+    overflow-x: hidden;
+}          
+.FH{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+.ig{
+    border-radius: 10px;
+}
+.con{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    background-color: blanchedalmond;
+    border-radius: 30px;
+    border-color: transparent;
+    font-size: 20px;
+}
+input{
+    border-radius: 5px;
+    border-color: transparent;
+}
+input::placeholder{
+    padding-left: 20px;
+}
+.bt{
+    border-radius: 5px;
+    background-color: darkcyan;
+    color: white;
+}
+.head1,.head2,.head3{
+    font-weight:600;
+    font-size: 35px;
+}
+
+/* hovers */
+
+i:hover{
+    transform: scale(1.2);
+}
+input:hover{
+    border-color: black;
+}
+.bt:hover{
+    border-color: black;
+    color: white;
+    background-color: black;
+}
+
+/* Animations */
+.fh{
+    animation-name: flyhigh;
+    animation-duration: 6s;
+}
+@keyframes flyhigh{
+    0%{
+        transform: translateX(-190px);
+    }
+}

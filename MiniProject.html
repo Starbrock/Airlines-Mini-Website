@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fly-High</title>
+    <link rel="stylesheet" href="./MiniProject.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg nb bg-dark n">
+        <div class="container-fluid cf">
+          <a class="navbar-brand text-white" href="#">
+            <img class="img-fluid pic" src="./MiniProject images/fly-high-high-resolution-logo-transparent (2).png">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link text-white" href="#">Check-in</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link text-white" href="#">Flight status</a>
+              </li>
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Support</a></li>
+                  <li><a class="dropdown-item" href="#">Professional Services</a></li>
+                  <li><a class="dropdown-item" href="#">Deployment Options</a></li>
+                  <li><a class="dropdown-item" href="#">Data Reporting</a></li>
+                  <li><a class="dropdown-item" href="#">Language</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Others</a></li>
+                </ul>
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="#">Support</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="#">Contact us</a>
+                </li>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <i class="fa-solid fa-circle-user icon1 text-light"></i>
+              <input class="form-control me-2 box" type="search" placeholder="Search" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass text-dark icon2"></i>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+</header>
+<body>
+  <video class="vid" src="./MiniProject video/Going_the_extra_smile_for_you_since_15_years_Brussels_A_7GaUReEdHeM_137_00_71.mp4" autoplay muted loop controls></video>
+  <div class="container border bold border-dark p-3 mt-3 con">
+    <span class="pb-3">Search Flights:</span>
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-3">
+        <label for="input">From:</label>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-3">
+        <label for="input">to:</label>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-3">
+       <input class="p2" type="text" placeholder="City or Airport" required>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-3">
+        <input class="p2" type="text" placeholder="City or Airport" required>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-3">
+        <label for="input">Depart:</label>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-3">
+        <label for="input">Return:</label>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-3">
+        <input type="date" required>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-3">
+        <input type="date" required>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 pt-3">
+        <label for="input">Adults: 12+</label>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 pt-3">
+        <label for="input">Children: 2-11</label>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 pt-3">
+        <label for="input">Infants: Lesser than 2</label>
+      </div>
+      <div class="row">
+      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 pt-3">
+        <input type="number" required>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 pt-3">
+        <input type="number" required>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 pt-3">
+        <input type="number" required>
+      </div>
+    </div>
+      <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8 pt-3">
+        <label for="input">Cabin:</label>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-3">
+        <input type="text" required>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-3 d-flex">
+        <input type="radio" required> Direct Flights
+      </div>
+      <div class="row pt-3">
+      <button class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 ms-3 bt">Search Flights</button>
+    </div>
+    </div>
+  </div>
+  <div class="container fh">
+    <div class="row d-flex justify-content-center pt-5">
+      <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 head1">
+        Fly-High
+      </div>
+    </div>
+    <div class="row pt-5 d-flex justify-content-evenly gap-5">
+      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 FH">
+        Fly-High is one of the best International airline networks in world. we gives best service to our customers in all over world.
+        Supports all over brands.
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+        <img class="img-fluid" src="./MiniProject images/fly-high-high-resolution-logo.png">
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center pt-5">
+      <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 head2">
+        Our-Service
+      </div>
+    </div>
+    <div class="row pt-5 d-flex justify-content-evenly gap-5">
+      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 FH">
+        <ul>
+          <li>Character Services</li>
+          <li>Business Class Services</li>
+          <li>Combinational Carrier Services</li>
+          <li>Low Cost Services</li>
+          <li>Full Carrier Services</li>
+        </ul>
+      </div>
+      <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+        <img class="img-fluid" src="./MiniProject images/2687.jpg">
+      </div>
+    </div>
+    <div class="row pt-5 d-flex justify-content-evenly gap-5">
+      <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 head3">
+        Brands
+      </div>
+      <div class="container">
+        <div class="row">
+          <span class="bold display-6 text-decoration-underline">International:</span>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <img class="img-fluid" src="./MiniProject images/Airlines Logo/Air-Asia-Logo.png">
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <img class="img-fluid" src="./MiniProject images/Airlines Logo/Air-India-Logo.png">
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <img class="img-fluid" src="./MiniProject images/Airlines Logo/American-Airlines-Logo.png">
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <img class="img-fluid" src="./MiniProject images/Airlines Logo/British-Airways-Logo.png">
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <img class="img-fluid" src="./MiniProject images/Airlines Logo/Delta-Airlines-Logo.png">
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <img class="img-fluid" src="./MiniProject images/Airlines Logo/Emirates-Airlines-Logo.png">
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <img class="img-fluid" src="./MiniProject images/Airlines Logo/Gulf-Air-Logo.png">
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <img class="img-fluid" src="./MiniProject images/Airlines Logo/Hawaiian-Airlines-Logo.png">
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <img class="img-fluid" src="./MiniProject images/Airlines Logo/Japan-Airlines-Logo.png">
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <img class="img-fluid" src="./MiniProject images/Airlines Logo/KLM-Airlines-Logo.png">
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <img class="img-fluid" src="./MiniProject images/Airlines Logo/Qantas-Airline-Logo.png">
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <img class="img-fluid" src="./MiniProject images/Airlines Logo/Qatar-Airways-Logo.png">
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <img class="img-fluid" src="./MiniProject images/Airlines Logo/SriLankan-Airlines-Logo.png">
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <img class="img-fluid" src="./MiniProject images/Airlines Logo/Swiss-Airline-Logo.png">
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <img class="img-fluid" src="./MiniProject images/Airlines Logo/Thai-Airways-Logo.png">
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <img class="img-fluid" src="./MiniProject images/Airlines Logo/Turkish-Airlines-Logo.png">
+          </div>
+          <div class="row pt-5">
+            <span class="bold display-6 pb-5 text-decoration-underline">Domestic:</span>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <img class="img-fluid" src="./MiniProject images/Domestic airline logo/air-carnival-airline-brand-logo.jpg">
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <img class="img-fluid" src="./MiniProject images/Domestic airline logo/air-costa-airline-brand-logo.jpg">
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <img class="img-fluid" src="./MiniProject images/Domestic airline logo/air-india-express-airline-brand-logo.png">
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <img class="img-fluid" src="./MiniProject images/Domestic airline logo/air-odisha-airline-brand-logo.png">
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <img class="img-fluid" src="./MiniProject images/Domestic airline logo/deccan-airline-brand-logo.jpg">
+            </div>
+            <div class="row pt-5">
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <img class="img-fluid" src="./MiniProject images/Domestic airline logo/indigo-airline-brand-logo.png">
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <img class="img-fluid" src="./MiniProject images/Domestic airline logo/jet-konnect-airline-brand-logo.jpg">
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <img class="img-fluid" src="./MiniProject images/Domestic airline logo/kingfisher-airline-brand-logo.jpg">
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <img class="img-fluid" src="./MiniProject images/Domestic airline logo/PARAMOUNT-airline-brand-logo.jpg">
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <img class="img-fluid" src="./MiniProject images/Domestic airline logo/spicejet-airline-brand-logo.jpg">
+            </div>
+            <div class="row d-flex justify-content-center">
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+              <img class="img-fluid" src="./MiniProject images/Domestic airline logo/trujet-airline-brand-logo.png">
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<footer class="text-center text-lg-start bg-dark text-white ftr">
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </section>
+  <section class="bg-dark">
+    <div class="container text-center text-md-start mt-5 d-flex ftr2">
+      <div class="row">
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+           Links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 ftr3">
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> Chennai, INDIA</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            mail@fly-high.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 91 88254 87235 </p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold">Fly-High.com</a>
+  </div>
+</footer>
+</html>
